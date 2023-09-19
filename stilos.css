@@ -1,0 +1,10 @@
+img{
+    width: 100px;
+    height: auto;
+}
+.nav-item:hover{
+    border-bottom:2px solid #000;
+}
+.nav-item{
+    justify-content: space-between;
+}
