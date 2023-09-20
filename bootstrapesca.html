@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pececitos Quili</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--FontGoogle-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Kanit:wght@300&display=swap"
+        rel="stylesheet" />
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!--CSS-->
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./imagenes/logo.jpeg" class="logo" alt="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav navegacion navbar justify-content-evenly">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            PECECITOS QUILI
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#quiensomos">¿Quién Somos?</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#realizamosenvios">¿Realizamos Envíos</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#contactanos">Contáctanos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Novedades/novedades.html">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Peces/peces.html">Peces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Pesca/pesca.html">Pesca</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Carrito/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="row margintop">
+            <div class="col p-3 mb-2 bg-body-secondary mt-2">
+                <h1 id="quiensomos" class="fw-bold ps-4">PESCA</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Carretos
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li><a href="">Spinning</a></li>
+                                <li><a href="">Casting</a></li>
+                                <li><a href="">Mosqueo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Varas
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <ul>
+                                <li><a href="">Spinning</a></li>
+                                <li><a href="">Casting</a></li>
+                                <li><a href="">Mosqueo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Lineas de Pesca
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse show">
+                        <ul>
+                            <li><a href="">Nylon</a></li>
+                            <li><a href="">Sedal</a></li>
+                            <li><a href="">Fluorocarbono</a></li>
+                        </ul>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Señuelos
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse show">
+                            <ul>
+                                <li><a href="">Popper</a></li>
+                                <li><a href="">Jigs</a></li>
+                                <li><a href="">Cucharas</a></li>
+                                <li><a href="">Torpedos</a></li>
+                                <li><a href="">Ranas</a></li>
+                                <li><a href="">Spinnerbaits</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Anzuelos
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse">
+                            <ul>
+                                <li><a href="">Tripletas</a></li>
+                                <li><a href="">Acerados</a></li>
+                                <li><a href="">Acerados de alto carbono</a></li>
+                                <li><a href="">Sardineros</a></li>
+                                <li><a href="">Maritimos</a></li>
+                                <li><a href="">Antitortuga</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Flotadores
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <ul>
+                                <li><a href="">Poliestireno expandido</a></li>
+                                <li><a href="">Madera</a></li>
+                                <li><a href="">Poliuretano</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                Plomadas
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse items" data-bs-parent="#accordionExample">
+                            <ul>
+                                <li><a href="" class="text-decoration-none">Rio</a></li>
+                                <li><a href="">Lago</a></li>
+                                <li><a href="">Mar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-4 text-center">
+                        <img src="/imagenes/carretoshimano.jpg" width="300px" height="300px" alt="">
+                        <h4>Shimano Sienna 4000FG</h4>
+                        <p>$180.000</p>
+                        <form action="">
+                            <input type="button" value="Agregar al carrito" class="boton">
+                        </form>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img src="/imagenes/shimanofx.jpg" width="300px" height="300px" alt="">
+                        <h4>Shimano Fx 2500</h4>
+                        <p>$165.000</p>
+                        <form action="">
+                            <input type="button" value="Agregar al carrito" class="boton">
+                        </form>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img src="/imagenes/penwrath.jpg" width="300px" height="300px" alt="">
+                        <h4>Penn Wrath 2500</h4>
+                        <p>$200.000</p>
+                        <form action="">
+                            <input type="button" value="Agregar al carrito" class="boton">
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 text-center">
+                        <img src="/imagenes/penspifisher.jpg" width="300px" height="300px" alt="">
+                        <h4>Penn Spinfisher 7000</h4>
+                        <p>$800.000</p>
+                        <form action="">
+                            <input type="button" value="Agregar al carrito" class="boton">
+                        </form>
+                    </div>
+                    <div class="col-4 text-center"><img src="/imagenes/abugarcia.jpg" width="300px" height="300px" alt="">
+                        <h4>Abu Garcia Orra s2</h4>
+                        <p>$400.000</p>
+                        <form action="">
+                            <input type="button" value="Agregar al carrito" class="boton">
+                        </form>
+                    </div>
+                    <div class="col-4 text-center"><img src="/imagenes/daiwa.jpg" width="300px" height="300px" alt="">
+                        <h4>Daiwa Satiga</h4>
+                        <p>$600.000</p>
+                        <form action="">
+                            <input type="button" value="Agregar al carrito" class="boton">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

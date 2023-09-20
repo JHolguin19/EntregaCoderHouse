@@ -72,3 +72,35 @@ h1{
     background-color: rgba(255, 255, 255, 0.89);
     border-radius: 5%;
 }
+
+.listac{
+    background-color: #605e5e3f;
+    border-radius: 2%;
+}
+
+div{
+    border-radius: 2%;
+}
+
+.subtitulos{
+    background-color: rgba(255, 255, 255, 0.55);
+    width: 30%;
+    height: 120px;
+    margin: auto;
+}
+
+.margintop{
+    padding-top: 95px;
+}
+
+button{
+    font-size: 30%;
+    font-family: 'Heebo', sans-serif;
+    
+}
+
+.items{
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+}
