@@ -104,3 +104,7 @@ button{
     list-style: none;
     text-decoration: none;
 }
+
+.accordion-body{
+    color:black;
+}
