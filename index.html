@@ -2,101 +2,172 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pececitos Quili</title>
-  <!--Font Awesome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-  <!--Font styles-->
+  <!--Boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!--FontGoogle-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <!--Custom CSS-->
-  <link rel="stylesheet" href="Estilos/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Kanit:wght@300&display=swap"
+    rel="stylesheet">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!--CSS-->
+  <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <nav class="nav-main ">
-        <img src="imagenes/logo.jpeg" alt="logoPececitos" class="nav-brand">
-        <ul class="nav-menuicon-right">
-          <a href="#">
-            <li class="fa-solid fa-bars"></li>
-          </a>
-
-        </ul>
-        <ul class="nav-menu">
-          <li>
-            <a href="Novedades/novedades.html">Novedades</a>
-          </li>
-          <li>
-            <a href="Peces/peces.html">Peces</a>
-          </li>
-          <li>
-            <a href="Pesca/pesca.html">Pesca</a>
-          </li>
-
-        </ul>
-        <ul class="nav-menu-right">
-          <li>
-            <a href="Carrito/carrito.html">
-              <i class="fa-solid fa-cart-shopping"></i>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./imagenes/logo.jpeg" class="logo" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav navegacion navbar justify-content-evenly">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PECECITOS QUILI
             </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#quiensomos">¿Quién Somos?</a></li>
+              <li><a class="dropdown-item" href="#realizamosenvios">¿Realizamos Envíos</a></li>
+              <li><a class="dropdown-item" href="#contactanos">Contáctanos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./Novedades/novedades.html">Novedades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Peces/peces.html">Peces</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/bootstrapesca.html">Pesca</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Carrito/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
           </li>
         </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section id="carrusel">
-      <div>
-        <img src="imagenes/betta.jpg" alt="carrusel" width="400px" class="imgcarrusel">
       </div>
-      <div class="carruseltxt">
-        <h1>Bettas</h1>
-        <p>El pez Betta es originario del sudeste asiático, y son maravillosos y muy variados en países como Tailandia,
-          Laos o Vietnam. Su vida, claro, es muy diferente en la naturaleza o cuando nacen en criaderos para vivir en
-          una pecera. En su hábitat natural viven dos años. Mientras que en la pecera pueden vivir hasta 4 o 5 años. Son
-          peces de agua dulce y cálida. Lo ideal es mantener el agua de la pecera a unos 26 grados. Ya en 22 grados o
-          por debajo, los Betta se enferman.</p>
+    </div>
+  </nav>
+  <section class="container">
+    <div class="row">
+      <div class="col">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active c-item" data-bs-interval="10000">
+              <img src="./imagenes/pesca.png" class="img-fluid d-block w-100 c-image" alt="...">
+              <div class="carousel-caption d-none d-md-block subtitulos">
+                <h5 class="">First slide label</h5>
+                <p class="placeholder">Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item c-item" data-bs-interval="2000">
+              <img src="./imagenes/pecesdisco.jpg" class="img-fluid d-block w-100 c-image" alt="...">
+              <div class="carousel-caption d-none d-md-block subtitulos">
+                <h5>Second slide label</h5>
+                <p class="placeholder">Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item c-item">
+              <img src="./imagenes/cruzarm.png" class="img-fluid d-block w-100 c-image" alt="...">
+              <div class="carousel-caption d-none d-md-block subtitulos">
+                <h5>Third slide label</h5>
+                <p class="placeholder">Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-    </section>
-    <h2 class="titulos0">¿Quién Somos?</h2>
-    <div class="iniciotxt">
-      <p class="parrafos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, distinctio quod sed
-        corporis eligendi minus, voluptatum assumenda dolorum dolorem debitis in tempora cum a, ipsam sapiente porro
-        libero dolor animi.</p>
-      <img src="imagenes/betta-acuario.jpg" alt="" class="img0">
+  </section>
+  <section class="container">
+    <div class="row">
+      <div class="col-12 p-3 mb-2 bg-body-secondary mt-2">
+        <h1 id="quiensomos" class="fw-bold ps-4">¿Quién Somos?</h1>
+      </div>
     </div>
-    <h2 class="titulos0">¿Realizamos Envíos?</h2>
-    <div id="segundop" class="iniciotxt">
-      <p class="parrafos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, distinctio quod sed
-        corporis eligendi minus, voluptatum assumenda dolorum dolorem debitis in tempora cum a, ipsam sapiente porro
-        libero dolor animi.</p>
-      <img src="imagenes/betta-acuario.jpg" alt="" class="img0">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quidem commodi blanditiis sequi,
+          eveniet
+          quo illo amet vel est adipisci repellendus corrupti saepe dolore dolores nam facere unde nesciunt velit.</p>
+      </div>
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+        <img src="./imagenes/quiensomos.png" class="image " alt="">
+      </div>
     </div>
-    <h2 class="titulos0">Contáctanos:</h2>
-    <div class="iniciotxt">
-      <p class="parrafos">Puedes contactarnos a través de Correo Electronico, Facebook, Instagram, Número Telefonico.
-      </p>
 
-      <p class="parrafos">Visita nuestra tienda en la calle 7 # 10-11, Santander de Quilichao. Horario de atención:
-        Lunes a Domingo, 8:00am a 5:00pm.</p>
+    <div class="row">
+      <div class="col d-flex flex-row-reverse p-3 mb-2 bg-body-secondary mt-2">
+        <h1 id="realizamosenvios" class="fw-bold pe-4">¿Realizamos Envíos?</h1>
+      </div>
     </div>
-    <div>
-      <ul class="listac">
-        <li><a href="#"><i class="fa-solid fa-envelope fa-2xl"></i></a></li>
-        <li><a href="https://www.facebook.com/pececitos.quili.5" target="_blank"><i
-              class="fa-brands fa-facebook fa-2xl"></i></a></li>
-        <li><a href="https://www.instagram.com/pececitosquili/" target="_blank"><i
-              class="fa-brands fa-instagram fa-2xl"></i></a></li>
-        <li><a href="#"><i class="fa-solid fa-phone fa-2xl"></i></a> </li>
-      </ul>
+    <div class="row d-flex flex-row-reverse">
+      <div class="col-12 col-md-6">
+       <p class="parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, quae animi maxime tenetur consequatur
+          rerum
+          at dolorum cumque modi fuga quod odit fugiat placeat, ex natus excepturi corrupti rem velit.</p>
+      </div>
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+        <img src="./imagenes/envios.png" class="ps-2" height="300" alt="">
+      </div>
     </div>
-    <h1>Localización:</h1>
+    <div class="row">
+      <div class="p-3 mb-2 bg-body-secondary mt-2">
+        <h1 id="contactanos" class="fw-bold ps-4">Contáctanos</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit fugiat hic quis, minus tenetur, tempore
+          eligendi, aliquid et reprehenderit nisi fuga provident molestiae! Voluptatem quae modi tempore minus eos
+          nesciunt.</p>
+      </div>
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+        <img src="./imagenes/contactanos.png" class="image3" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <div class="row">
+      <div class="col footer">
+        <ul class="listac">
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-envelope fa-2xl"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/pececitos.quili.5" target="_blank"><i
+                class="fa-brands fa-facebook fa-2xl"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/pececitosquili/" target="_blank"><i
+                class="fa-brands fa-instagram fa-2xl"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-phone fa-2xl"></i></a> </li>
+        </ul>
+      </div>
+    </div>
+    <h1 class="fw-bold ps-4">Localización:</h1>
     <footer class="mapa">
       <div>
         <iframe
@@ -105,8 +176,7 @@
           class="mapa"></iframe>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+  </section>
+  
 </body>
-
 </html>
