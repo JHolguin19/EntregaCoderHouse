@@ -121,3 +121,31 @@ button{
 #footer .col{
     flex-grow: 1;
 }
+
+/*Estilos Novedades*/
+.imagen{
+    margin-top: 8%;
+    height: 450px;
+}
+.c-itemn{
+    height: 500px;
+    width: 100%;
+}
+
+.c-imagenn{
+    height: 500px;
+}
+
+.c-itemnn{
+    margin-top: 12%;
+    height: 450px;
+}
+
+.imagennn{
+    height: 400px;
+    
+}
+.imagenartemia{
+    height: 400px;
+    margin-top: 5%;
+}
