@@ -40,6 +40,7 @@ h1{
 
 .image{
     height: 300px;
+    border-radius: 10%;
 }
 .image3{
     height: 250px;
@@ -47,9 +48,10 @@ h1{
 }
 
 .parrafo{
-    margin: 8%;
+    margin: 6%;
     text-align: justify;
     font-size: 25px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .listac{
@@ -60,13 +62,32 @@ h1{
     padding-right: 4%;
     background-color: #ffffff6f;
 }
-.mapa{
-    justify-content: center;
-    align-items: center;
-    padding-left: 25%;
-    width:600px;
-    height:450px;
+
+@media (max-width:576px) {
+    .mapa{
+        height: 400px;
+        width: 300px;
+        margin: auto;
+    }
+    
 }
+@media (min-width:577px) {
+    .mapa{
+        height: 450px;
+        width: 500px;
+        margin: auto;
+    }
+    
+}
+@media (min-width:1023px) {
+    .mapa{
+        height: 700px;
+        width: 800px;
+        margin: auto;
+    }
+    
+}
+
 
 .placeholder{
     background-color: rgba(255, 255, 255, 0.89);
@@ -137,15 +158,38 @@ button{
 }
 
 .c-itemnn{
-    margin-top: 12%;
+    margin-top: 5%;
     height: 450px;
 }
 
-.imagennn{
+.c-imagennn{
     height: 400px;
     
 }
 .imagenartemia{
-    height: 400px;
-    margin-top: 5%;
+    height: 350px;
+    margin-top: 10%;
+    
+}
+
+/*Peces*/
+
+.c-itemp{
+    margin-top: 15%;
+    height: 500px;
+}
+
+.c-imagenp{
+    height: 450px;
+}
+
+h3{
+    font-size: 35px;
+    padding-left: 5.5%;
+    font-weight: 700;
+}
+
+.imagenguppy{
+    height: 450px;
+    margin-top: 15%;
 }
