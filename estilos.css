@@ -10,14 +10,16 @@ ul{
     justify-content: space-between;
 }
 .c-item{
-    height: 620px;
+    height: 650px;
     width: 100%;
 }
 
 .c-image{
     height: 100%;
 }
-
+.carousel{
+    padding-top: 7%;
+}
 .logo{
     height: 70px;
     border-radius: 15%;
@@ -39,8 +41,10 @@ h1{
 }
 
 .image{
-    height: 300px;
-    border-radius: 10%;
+    height: 400px;
+    border-radius: 5%;
+    margin-top: 15%;
+    margin-right: 3%;
 }
 .image3{
     height: 250px;
@@ -89,11 +93,6 @@ h1{
 }
 
 
-.placeholder{
-    background-color: rgba(255, 255, 255, 0.89);
-    border-radius: 5%;
-}
-
 .listac{
     background-color: #605e5e3f;
     border-radius: 2%;
@@ -103,12 +102,6 @@ div{
     border-radius: 2%;
 }
 
-.subtitulos{
-    background-color: rgba(255, 255, 255, 0.55);
-    width: 30%;
-    height: 120px;
-    margin: auto;
-}
 
 .margintop{
     padding-top: 95px;
