@@ -16,6 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Kanit:wght@300&display=swap"
     rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <!--Font Awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!--CSS-->
@@ -25,7 +26,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand" href="#">
         <img src="./imagenes/logo.jpeg" class="logo" alt="logo de PececitosQuili">
       </a>
@@ -66,55 +67,37 @@
   <section class="container">
     <div class="row">
       <div class="col">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-item active c-item" data-bs-interval="10000">
-            <img src="./imagenes/uno.jpeg" class="img-fluid d-block w-100 c-image" alt="Fotos del Almacen">
-            <div class="carousel-caption d-none d-md-block subtitulos">
-              
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+              <img src="./imagenes/uno.jpeg" class="d-block w-100 img-fluid c-image" alt="Imagen Carousel Negocio">
+            </div>
+            <div class="carousel-item c-item">
+              <img src="./imagenes/dos.jpeg" class="d-block w-100 img-fluid c-image" alt="Imagen Carousel Negocio">
+            </div>
+            <div class="carousel-item c-item">
+              <img src="./imagenes/tres.jpeg" class="d-block w-100 img-fluid c-image" alt="Imagen Carousel Negocio">
             </div>
           </div>
-          <div class="carousel-item c-item" data-bs-interval="2000">
-            <img src="./imagenes/dos.jpeg" class="img-fluid d-block w-100 c-image" alt="Fotos del Almacen">
-            <div class="carousel-caption d-none d-md-block subtitulos">
-              
-            </div>
-          </div>
-          <div class="carousel-item c-item">
-            <img src="./imagenes/tres.jpeg" class="img-fluid d-block w-100 c-image" alt="Fotos del Almacen">
-            <div class="carousel-caption d-none d-md-block subtitulos">
-              
-            </div>
-          </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-            data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-            data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-      </div>
   </section>
+  <h1>Pececitos Quili</h1>
   <section class="container">
     <div class="row">
-      <div class="col-12 p-3 mb-2 bg-body-secondary mt-2">
-        <h1 id="quiensomos" class="fw-bold ps-4">¿Quién Somos?</h1>
+      <div class="col p-3 mb-2 bg-body-secondary mt-2">
+        <h2 id="quiensomos" class="fw-bold ps-4">¿Quién Somos?</h2>
       </div>
     </div>
     <div class="row">
-      <div class="col-12 col-md-7">
+      <div class=" col col-lg-7">
         <p class="parrafo">
           Bienvenidos a PececitosQuili, tu destino definitivo para todo lo relacionado con la pesca y los peces
           ornamentales. Fundada con pasión y compromiso por amantes de la vida acuática, nuestra tienda se ha convertido
@@ -122,34 +105,34 @@
           Quilichao.
         </p>
       </div>
-      <div class="col-12 col-md-5 d-flex justify-content-center">
-        <img src="./imagenes/quiensomos2.png" class="quiensomos img-fluid" alt="Vector Quien somos">
+      <div class="img col-md-12 col-lg-5 d-flex  justify-content-center">
+        <img src="./imagenes/quiensomos2.png" class="quiensomos img-fluid " alt="Vector Quien somos">
       </div>
     </div>
 
     <div class="row">
       <div class="col d-flex flex-row-reverse p-3 mb-2 bg-body-secondary mt-2">
-        <h1 id="nuestramision" class="fw-bold pe-4">Nuestra Misión</h1>
+        <h2 id="nuestramision" class="fw-bold pe-4">Nuestra Misión</h2>
       </div>
     </div>
     <div class="row d-flex flex-row-reverse">
-      <div class="col-12 col-md-7">
+      <div class="col-md-12 col-lg-7">
         <p class="parrafo">En PececitosQuili, nuestra misión es simple pero poderosa: inspirar y apoyar a las personas
           que comparten nuestro amor por la pesca y los peces ornamentales. Nos esforzamos por ofrecer la más amplia
           gama de productos de pesca de alta calidad y peces ornamentales excepcionales, junto con el conocimiento
           experto necesario para que tengas éxito en tu pasión.</p>
       </div>
-      <div class="col-12 col-md-5 d-flex justify-content-center">
+      <div class="col-md-12 col-lg-5 d-flex justify-content-center img ">
         <img src="./imagenes/mission.svg" class="image2 img-fluid" alt="vector nuestra mision">
       </div>
     </div>
     <div class="row">
       <div class="col-12 p-3 mb-2 bg-body-secondary mt-2">
-        <h1 id="nuestroservicios" class="fw-bold ps-4">Nuestros Servicios</h1>
+        <h2 id="nuestroservicios" class="fw-bold ps-4">Nuestros Servicios</h2>
       </div>
     </div>
     <div class="row">
-      <div class="col-12 col-md-8">
+      <div class="col-md-12 col-lg-8">
         <p class="parrafo">
           <b>Amplia Selección de Productos:</b> Ofrecemos una amplia gama de equipos de pesca de las mejores marcas, así
           como una variedad de peces ornamentales exóticos y suministros para acuarios.
@@ -163,28 +146,28 @@
           tu satisfacción y éxito en tu pasatiempo.
         </p>
       </div>
-      <div class="col-12 col-md-4 d-flex justify-content-center">
+      <div class="col-md-12 col-lg-4 d-flex justify-content-center img ">
         <img src="./imagenes/rodfixed2.jpg" class="image img-fluid" alt="Caña reparada">
       </div>
       <div class="row">
         <div class="col d-flex flex-row-reverse p-3 mb-2 bg-body-secondary mt-2">
-          <h1 id="nuestrocompromiso" class="fw-bold pe-4">Nuestro Compromiso Ambiental</h1>
+          <h2 id="nuestrocompromiso" class="fw-bold pe-4">Nuestro Compromiso Ambiental</h2>
         </div>
       </div>
       <div class="row d-flex flex-row-reverse">
-        <div class="col-12 col-md-6">
+        <div class="col-md-12 col-lg-7">
           <p class="parrafo">En PececitosQuili, también somos conscientes de la importancia de la sostenibilidad y la
             conservación de nuestros ecosistemas acuáticos. Trabajamos con proveedores que siguen prácticas responsables
             y sostenibles para garantizar que nuestras actividades no tengan un impacto negativo en el medio ambiente.
           </p>
         </div>
-        <div class="col-12 col-md-6 d-flex justify-content-center">
-          <img src="./imagenes/compromiso.png" class="mt-5" height="300" alt="Compromiso Ambiental">
+        <div class="col-md-12 col-lg-5 d-flex justify-content-center img ">
+          <img src="./imagenes/compromiso.png" class="" height="300" alt="Compromiso Ambiental">
         </div>
       </div>
       <div class="row">
         <div class="p-3 mb-2 bg-body-secondary mt-2">
-          <h1 id="comunidad" class="fw-bold ps-4">Únete a Nuestra Comunidad</h1>
+          <h2 id="comunidad" class="fw-bold ps-4">Únete a Nuestra Comunidad</h2>
         </div>
       </div>
       <div class="row">
@@ -197,10 +180,9 @@
             peces ornamentales. Esperamos verte pronto en nuestra tienda y ser parte de tu emocionante viaje
             acuático.<br>
             <br>
-            <b>¡Que tus aventuras acuáticas estén llenas de alegría y éxitos!</b>
           </p>
         </div>
-        <div class="col-12 col-md-4 d-flex justify-content-center">
+        <div class="img col-12 col-md-4 d-flex justify-content-center">
           <img src="./imagenes/comunidad2.jpg" class="image3" alt="vector comunidad">
         </div>
       </div>
@@ -209,7 +191,8 @@
     <div class="row">
       <div class="col footer">
         <ul class="listac">
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-whatsapp fa-2xl"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="
+            https://api.whatsapp.com/send?phone=573152875041"><i class="fa-brands fa-whatsapp fa-2xl"></i></a></li>
           <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/pececitos.quili.5" target="_blank"><i
                 class="fa-brands fa-facebook fa-2xl"></i></a></li>
           <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/pececitosquili/" target="_blank"><i
