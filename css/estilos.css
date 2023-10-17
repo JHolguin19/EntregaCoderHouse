@@ -117,7 +117,7 @@ h2{
 }
 
 body p {
-  margin: 6%;
+  margin: 4%;
   text-align: justify;
   font-size: 25px;
   font-family: 'Oswald', sans-serif;
@@ -158,7 +158,7 @@ body p {
 
 
 .listac {
-  background-color: #2011c43f;
+  background-color: #89cbee;
   border-radius: 2%;
 }
 
@@ -170,10 +170,7 @@ div {
   padding-top: 95px;
 }
 
-button {
-  font-size: 30%;
-  font-family: 'Heebo', sans-serif;
-}
+
 
 .items {
   font-size: 20px;
@@ -214,8 +211,7 @@ button {
 }
 
 /*Footer*/
-footer {
-  background-color: #cf1313;
+footer {  
   color: white;
   margin-top: 5%;
   overflow-x: hidden; 
@@ -250,47 +246,39 @@ footer div ul {
     margin: 20%;
   }
 }
-
-/*Peces*/
-.c-itemp {
-  margin-top: 15%;
-  height: 400px;
-}
-
-.c-imagenp {
-  height: 350px;
-  border-radius: 5%;
-}
-
-body h3 {
-  font-size: 35px;
-  padding-left: 5.5%;
-  font-weight: 700;
-}
-
-.imagenguppy {
-  height: 450px;
-  margin-top: 15%;
-}
-
 /*Pesca*/
+.pesca h2{
+  font-size: 20px;
+}
+.pesca p{
+  font-size: 15px;
+}
 .centrado p {
   text-align: center;
 }
 
-
+.boton{
+  background-color: #00ccfa4e;
+  width: 10rem;
+  height: 2rem;
+  border-radius: 4%;
+  border: 1px solid;
+}
+.boton:hover{
+  background-color: #00bbf9;
+}
 .img{
   align-items: center;
 }
 
 /*Peces2*/
 .c-itemp{
-  margin-top: 15%;
   height: 500px;
 }
 
 .c-imagenp{
   height: 450px;
+  border-radius: 5%;
 }
 
 h3{
@@ -322,7 +310,9 @@ h3{
   margin-top: 2%;
   width: 100px;
   height: 40px;
-  border: 1px solid black
+  color: black;
+  border: 1px solid black;
+  font-size: 17px;
 }
 .btn:hover{
   background-color: #2868cf;
@@ -399,3 +389,19 @@ footer{
 .navegacion{
   background-color: #8fe1ffc5;
 }
+
+.barranav ul li{
+  background-color: #41c4f331;
+  border-radius: 10%;
+}
+
+.barranav ul li .active{
+  background: #89cbee;
+  border-radius: 10%;
+}
+.barranav ul li:hover{
+  background-color: #15b6f0ab;
+}
+
+
+
