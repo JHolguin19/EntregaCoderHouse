@@ -11,7 +11,7 @@ body h1 {
   padding-top: 1%;
   font-size: 70px;
   font-family: 'Anton', sans-serif;
-  color:  #337df5;
+  color: #2868cf;
   text-align: center;
 }
 
@@ -254,11 +254,12 @@ footer div ul {
 /*Peces*/
 .c-itemp {
   margin-top: 15%;
-  height: 500px;
+  height: 400px;
 }
 
 .c-imagenp {
-  height: 450px;
+  height: 350px;
+  border-radius: 5%;
 }
 
 body h3 {
@@ -369,4 +370,32 @@ h1{
 .bgh2{
   background-color: #8fe1ffc5;
   
+}
+
+/*Pez Neon de pag de peces renovada*/
+
+.pezneon p{
+  font-size: 20px;
+}
+
+.pezneon h3{
+  text-align: center;
+}
+.parametros ul li{
+  padding-left: 5%;
+  font-size: 17px;
+  margin: 1%;
+}
+.parametros p{
+  margin: 4%;
+}
+
+footer{
+  color: #000000b6;
+  background-color:#8fe1ffc5;
+  
+}
+
+.navegacion{
+  background-color: #8fe1ffc5;
 }
