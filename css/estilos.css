@@ -5,6 +5,12 @@
 
 body ul {
   list-style: none;
+
+}
+
+body nav ul li:hover{
+  border-bottom: solid 2px;
+  
 }
 
 body h1 {
